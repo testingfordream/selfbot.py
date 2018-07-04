@@ -186,7 +186,7 @@ class Info():
 
 
         @commands.command(pass_context=True)
-            async def info(self, ctx):
+        async def info(self, ctx):
             '''See bot information, uptime, servers etc.'''
             emb = discord.Embed(colour=0x00FFFF)
             emb.set_author(name='Self bot.', icon_url=self.bot.user.avatar_url)
