@@ -195,8 +195,7 @@ class Info():
         emb.add_field(name='My crush:',value='the bot creator his crush is SECRET!')
         emb.add_field(name='Join my discord!',value='[Server:]()
         emb.add_field(name='Uptime',value=time_)
-        emb.set_footer(text="ID: {}".format(self.bot.user.id))
-        emb.set_thumbnail(url='https://cdn.discordapp.com/avatars/319395783847837696/349677f658e864c0a5247a658df61eb1.webp?width=80&height=80')
+        emb.set_footer(text="ID: {}".format(self.bot.user.id)
         await self.bot.say(embed=emb)
 
     @commands.command(pass_context=True)
