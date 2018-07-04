@@ -174,27 +174,8 @@ class Info():
     @commands.command(pass_context=True)
     async def info(self, ctx):
         '''See bot information, uptime, servers etc.'''
-        uptime = (datetime.datetime.now() - self.bot.uptime)
-        hours, rem = divmod(int(uptime.total_seconds()), 3600)
-        minutes, seconds = divmod(rem, 60)
-        days, hours = divmod(hours, 24)
-        if days:
-            time_ = '%s days, %s hours, %s minutes, and %s seconds' % (days, hours, minutes, seconds)
-        else:
-            time_ = '%s hours, %s minutes, and %s seconds' % (hours, minutes, seconds)
-        servers = len(self.bot.servers)
-        version = '1.2.1'
-        library = 'discord.py'
-        time = ctx.message.timestamp
         emb = discord.Embed(colour=0x00FFFF)
-        emb.set_author(name='selfbot.py', icon_url=self.bot.user.avatar_url)
-        emb.add_field(name='Version',value='0.0.0')
-        emb.add_field(name='Library',value='discord.py')
-        emb.add_field(name='Creator',value='papaatje#0001(https://discord.gg/dbn78Kt)')
-        emb.add_field(name='Servers',value=servers)
-        emb.add_field(name='My crush:',value='the bot creator his crush is SECRET!')
-        emb.add_field(name='Join my discord!',value='[Server:]()
-        emb.add_field(name='Uptime',value=time_)
+        emb.set_author(name='Self bot.', icon_url=self.bot.user.avatar_url)
         emb.set_footer(text="ID: {}".format(self.bot.user.id)
         await self.bot.say(embed=emb)
 
