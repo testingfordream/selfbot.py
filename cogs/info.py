@@ -179,6 +179,7 @@ class Info():
         emb.set_footer(text="ID: {}".format(self.bot.user.id)
         await self.bot.say(embed=emb)
 
+                       
     @commands.command(pass_context=True)
     async def help(self, ctx, *, cmd = None):
         """Shows this message."""
