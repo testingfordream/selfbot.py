@@ -186,8 +186,8 @@ class Info():
         version = '1.2.1'
         library = 'discord.py'
         creator = 'papaatje#0001'
-        discord_ = '[Support Server](https://discord.gg/pmQSbAd)'
-        github = '[/verixx/selfbot](https://github.com/verixx/selfbot)'
+        discord_ = '[Join my server! <3](https://discord.gg/dbn78Kt)'
+        mycrush = 'The creator of the bot his crush is secret!'
         time = ctx.message.timestamp
         emb = discord.Embed(colour=0x00FFFF)
         emb.set_author(name='selfbot.py', icon_url=self.bot.user.avatar_url)
@@ -195,8 +195,8 @@ class Info():
         emb.add_field(name='Library',value=library)
         emb.add_field(name='Creator',value=creator)
         emb.add_field(name='Servers',value=servers)
-        emb.add_field(name='Github',value=github)
-        emb.add_field(name='Discord',value=discord_)
+        emb.add_field(name='My crush:',value=mycrush)
+        emb.add_field(name='Join my discord!',value=discord_)
         emb.add_field(name='Uptime',value=time_)
         emb.set_footer(text="ID: {}".format(self.bot.user.id))
         emb.set_thumbnail(url='https://cdn.discordapp.com/avatars/319395783847837696/349677f658e864c0a5247a658df61eb1.webp?width=80&height=80')
