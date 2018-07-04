@@ -185,9 +185,6 @@ class Info():
         servers = len(self.bot.servers)
         version = '1.2.1'
         library = 'discord.py'
-        creator = 'papaatje#0001'
-        discord_ = '[Join my server! <3](https://discord.gg/dbn78Kt)'
-        mycrush = 'The creator of the bot his crush is secret!'
         time = ctx.message.timestamp
         emb = discord.Embed(colour=0x00FFFF)
         emb.set_author(name='selfbot.py', icon_url=self.bot.user.avatar_url)
