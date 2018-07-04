@@ -181,21 +181,9 @@ class Info():
                 try:
                     await self.bot.say(embed=page)
                 except:
-                    await self.bot.say('I need the embed links perm.')     
-
-
-
-        @commands.command(pass_context=True)
-        async def info(self, ctx):
-            '''See bot information, uptime, servers etc.'''
-            emb = discord.Embed(colour=0x00FFFF)
-            emb.set_author(name='Self bot.', icon_url=self.bot.user.avatar_url)
-            emb.set_footer(text="ID: {}".format(self.bot.user.id)
-            await self.bot.say(embed=emb)
-
+                    await self.bot.say('I need the embed links perm.')    
                        
 
-                       
 
 def setup(bot):
     bot.add_cog(Info(bot))
